@@ -107,12 +107,10 @@ regional del equipo.
 Capturas del programa en ejecución
 
 
-
-
 Escenario 1: persona menor de edad
 
-![Escenario 1](imagenes/escenario-1.png)
+![Escenario 1: menor de edad](imagenes/escenario-1.png.png)
 
 Escenario 2: persona mayor de edad
 
-![Escenario 2](imagenes/escenario-2.png)
+![Escenario 2: mayor de edad](imagenes/escenario-2.png.png)
