@@ -1,31 +1,16 @@
-﻿double Atriangulo(double a, double b)
-{
-  return a * b / 2;
-}
-;
+// PARTE 1: PRESENTACIÓN Y ENTRADA DE DATOS
 
-int ACuadrado(int a, int b)
-{
-  return a * b;
-}
-;
+Console.WriteLine("---------------- Control de Flujo ----------------\n");
 
-double ACirculo(double r)
-{
-  const double PI = Math.PI;
-  double rSquared = Math.Pow(r, 2);
-  return PI * rSquared;
-}
-;
+Console.WriteLine("Área del triángulo");
+double baseTriangulo = LeerMedida("Introduce la base: ");
+double alturaTriangulo = LeerMedida("Introduce la altura: ");
 
-void CheckIfYoung(int year)
-{
-  if (year > 17)
-  {
-    Console.WriteLine("Mayor edad");
-    return;
-  }
-  ;
-  Console.WriteLine("Menor edad");
+Console.WriteLine("\nÁrea del cuadrado");
+double ladoCuadrado = LeerMedida("Introduce el lado: ");
 
-}
+Console.WriteLine("\nÁrea del círculo");
+double radioCirculo = LeerMedida("Introduce el radio: ");
+
+Console.WriteLine("\nMayor o menor de edad");
+int edad = LeerEdad();
