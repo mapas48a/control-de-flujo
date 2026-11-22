@@ -33,3 +33,37 @@ Console.WriteLine(
 
 Console.WriteLine($"Edad: {edad} años");
 Console.WriteLine($"Resultado: {CheckIfYoung(edad)}");
+
+// PARTE 3: FUNCIONES DE CÁLCULO Y CLASIFICACIÓN DE EDAD
+
+// Calcula el área del triángulo.
+double Atriangulo(double a, double b)
+{
+    return a * b / 2;
+}
+
+// Calcula el área del cuadrado.
+double ACuadrado(double lado)
+{
+    return lado * lado;
+}
+
+// Calcula el área del círculo.
+double ACirculo(double r)
+{
+    const double PI = Math.PI;
+    double rSquared = Math.Pow(r, 2);
+    return PI * rSquared;
+}
+
+// Devuelve un mensaje según la edad recibida.
+string CheckIfYoung(int year)
+{
+    if (year >= 18)
+    {
+        return "Mayor de edad";
+    }
+
+    return "Menor de edad";
+}
+
