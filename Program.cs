@@ -67,3 +67,39 @@ string CheckIfYoung(int year)
     return "Menor de edad";
 }
 
+// PARTE 4: LECTURA Y VALIDACIÓN DE DATOS
+
+// Solicita una medida hasta recibir un número finito y positivo.
+double LeerMedida(string mensaje)
+{
+    while (true)
+    {
+        Console.Write(mensaje);
+
+        if (double.TryParse(Console.ReadLine(), out double valor)
+            && double.IsFinite(valor)
+            && valor > 0)
+        {
+            return valor;
+        }
+
+        Console.WriteLine("Introduce un número válido mayor que cero.");
+    }
+}
+
+// Solicita una edad entera y no negativa.
+int LeerEdad()
+{
+    while (true)
+    {
+        Console.Write("Introduce la edad en años: ");
+
+        if (int.TryParse(Console.ReadLine(), out int edad)
+            && edad >= 0)
+        {
+            return edad;
+        }
+
+        Console.WriteLine("Introduce una edad válida en números enteros.");
+    }
+}
